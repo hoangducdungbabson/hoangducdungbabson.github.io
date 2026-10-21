@@ -1,298 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hoang Duc Dung — Business Analyst / Marketing Analyst</title>
-  <meta name="description" content="Hoang Duc Dung — MSBA student at Babson College, Business Analyst / Marketing Analyst focused on data analytics in media tech.">
-
-  <!-- Pico CSS: classless-friendly CDN framework, no build step required -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#123C32" />
+  <meta name="description" content="Dave Hoang — MS in Business Analytics candidate at Babson College. Exploring digital platforms, consumer behavior, AI, and computational marketing research." />
+  <title>Dave Hoang | Research, Analytics & Strategy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --spacing: 1rem;
-    }
-    body {
-      max-width: 760px;
-    }
-    header.hero {
-      text-align: center;
-      padding-block: 2rem 1rem;
-    }
-    header.hero h1 {
-      margin-bottom: 0.25rem;
-    }
-    header.hero p.tagline {
-      font-size: 1.15rem;
-      color: var(--pico-muted-color);
-      margin-bottom: 0.75rem;
-    }
-    .contact-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      justify-content: center;
-      margin-top: 0.5rem;
-    }
-    .contact-links a {
-      text-decoration: none;
-    }
-    section {
-      margin-bottom: 2.25rem;
-    }
-    section h2 {
-      border-bottom: 2px solid var(--pico-primary);
-      padding-bottom: 0.35rem;
-      margin-bottom: 1rem;
-    }
-    .entry {
-      margin-bottom: 1.25rem;
-    }
-    .entry:last-child {
-      margin-bottom: 0;
-    }
-    .entry-header {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 0.25rem;
-      margin-bottom: 0.25rem;
-    }
-    .entry-header h3 {
-      margin: 0;
-      font-size: 1.05rem;
-    }
-    .entry-dates {
-      font-size: 0.9rem;
-      color: var(--pico-muted-color);
-      white-space: nowrap;
-    }
-    .entry-sub {
-      font-size: 0.95rem;
-      color: var(--pico-muted-color);
-      margin: 0 0 0.4rem 0;
-    }
-    ul.bullets {
-      margin: 0;
-      padding-left: 1.2rem;
-    }
-    ul.bullets li {
-      margin-bottom: 0.25rem;
-    }
-    .skills-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .skills-list li {
-      background: var(--pico-primary-focus);
-      color: var(--pico-primary-inverse, inherit);
-      border-radius: 999px;
-      padding: 0.3rem 0.85rem;
-      font-size: 0.9rem;
-    }
-    .placeholder {
-      font-style: italic;
-      color: var(--pico-muted-color);
-    }
-    footer {
-      text-align: center;
-      font-size: 0.85rem;
-      color: var(--pico-muted-color);
-      padding-block: 1.5rem 2rem;
-    }
-    @media (max-width: 480px) {
-      .entry-header {
-        flex-direction: column;
-      }
-    }
+    :root{--navy:#123C32;--navy2:#205747;--gold:#3F8060;--cream:#F4F8F3;--white:#fff;--ink:#18372E;--muted:#60766C;--line:#DAE6DC;--radius:20px;--shadow:0 18px 55px rgba(18,60,50,.085)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;line-height:1.7}a{color:inherit;text-decoration:none}button{font:inherit}::selection{background:#CDE8D3;color:var(--navy)}
+    .wrap{max-width:1160px;margin:auto;padding:0 28px}.eyebrow{text-transform:uppercase;letter-spacing:.19em;font-size:.73rem;font-weight:800;color:var(--gold)}h1,h2,h3,.brand{font-family:Manrope,sans-serif}h1,h2,h3,p{margin-top:0}h2{font-size:clamp(1.9rem,3.6vw,2.8rem);letter-spacing:-.055em;line-height:1.2;margin-bottom:18px}h3{letter-spacing:-.025em;line-height:1.35}p{color:var(--muted)}.section{padding:95px 0}.section-head{max-width:740px;margin-bottom:38px}.section-head p{font-size:1.05rem}.accent{color:var(--gold)}
+    header{position:sticky;top:0;z-index:100;background:rgba(244,248,243,.94);backdrop-filter:blur(18px);border-bottom:1px solid rgba(18,60,50,.09)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{font-size:1.17rem;font-weight:800;letter-spacing:-.055em}.brand span{color:var(--gold)}.navlinks{display:flex;align-items:center;gap:27px}.navlinks a{font-size:.85rem;font-weight:700;color:#476457;transition:color .2s}.navlinks a:hover,.navlinks a:focus-visible{color:var(--gold)}.navlinks .nav-cta{background:var(--navy);color:white;padding:10px 17px;border-radius:100px}.menu-toggle{display:none;border:1px solid var(--line);background:white;padding:8px 13px;border-radius:10px;cursor:pointer}
+    .hero{background:var(--navy);color:white;position:relative;overflow:hidden}.hero:before{content:'';position:absolute;width:720px;height:720px;border-radius:50%;background:radial-gradient(circle,rgba(149,220,166,.21),transparent 67%);right:-190px;top:-210px;pointer-events:none}.hero-grid{position:relative;display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:70px;min-height:620px;padding-top:90px;padding-bottom:100px}.hero h1{font-size:clamp(3.5rem,6.5vw,6.1rem);line-height:1.06;letter-spacing:-.075em;margin:18px 0 24px}.hero p{color:#D5E8DC;max-width:630px;font-size:1.1rem}.hero .eyebrow{color:#B8E6BE}.hero-buttons{display:flex;flex-wrap:wrap;gap:13px;margin-top:34px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 22px;border-radius:100px;font-weight:800;font-size:.88rem;transition:transform .2s,background .2s;border:1px solid transparent}.btn:hover{transform:translateY(-3px)}.btn-gold{background:#BDE9C5;color:var(--navy)}.btn-outline{border-color:#82A999;color:white}.btn-outline:hover{background:rgba(255,255,255,.09)}.btn-dark{background:var(--navy);color:white}.hero-card{background:linear-gradient(150deg,#2B6652,#174536);border:1px solid rgba(255,255,255,.16);border-radius:28px;padding:38px;box-shadow:0 30px 80px rgba(0,0,0,.17);position:relative}.monogram{height:190px;display:grid;place-items:center;font-family:Manrope,sans-serif;font-size:7.3rem;font-weight:800;letter-spacing:-.12em;color:#C9F0C9;border-bottom:1px solid rgba(255,255,255,.18);margin-bottom:24px}.hero-card h3{color:white;margin-bottom:7px}.hero-card p{font-size:.9rem;margin:0}.small-label{font-size:.73rem;text-transform:uppercase;letter-spacing:.15em;color:#B5DFBE;font-weight:800}
+    .quick-strip{background:white;border-bottom:1px solid var(--line)}.quick-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding:27px 28px}.quick-item{border-left:2px solid var(--gold);padding-left:19px}.quick-item strong{display:block;font-size:.88rem}.quick-item span{display:block;color:var(--muted);font-size:.82rem}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}.about-copy p{font-size:1.04rem}.quote-card{background:white;padding:35px;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--line)}.quote-card .quote{font-family:Manrope,sans-serif;font-size:1.45rem;line-height:1.55;letter-spacing:-.04em;font-weight:700;color:var(--navy)}.quote-card .quote-mark{font-size:3.8rem;color:var(--gold);line-height:.7}.tag-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}.tag{background:#EAF3EA;color:#4F6B5D;padding:6px 12px;border-radius:100px;font-size:.78rem;font-weight:700}
+    .alt{background:#fff}.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:0 6px 20px rgba(18,60,50,.04);transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.alt .card{background:var(--cream)}.card .num{font-family:Manrope,sans-serif;font-weight:800;font-size:.85rem;color:var(--gold);margin-bottom:30px}.card h3{font-size:1.15rem;margin-bottom:12px}.card p{font-size:.93rem;margin-bottom:0}.card .mini{font-size:.77rem;color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:13px}
+    .timeline{display:grid;gap:18px}.timeline-item{display:grid;grid-template-columns:190px 1fr;gap:28px;background:white;border:1px solid var(--line);border-radius:17px;padding:26px 30px}.timeline-item .date{color:var(--gold);font-weight:800;font-size:.84rem}.timeline-item h3{font-size:1.05rem;margin-bottom:5px}.timeline-item p{margin-bottom:0;font-size:.93rem}.timeline-item .org{font-weight:700;color:#557263;font-size:.88rem;margin-bottom:10px}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.project{background:var(--cream);border:1px solid var(--line);border-radius:20px;overflow:hidden}.project-art{height:140px;display:flex;align-items:center;justify-content:space-between;padding:25px 30px;background:linear-gradient(120deg,#123C32,#387A61);color:#BDE9C5}.project-art span:first-child{font-size:3rem;font-family:Manrope,sans-serif;font-weight:800;letter-spacing:-.08em}.project-art span:last-child{font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;font-weight:800}.project-body{padding:27px}.project-body h3{margin-bottom:9px}.project-body p{font-size:.92rem}.project-body a{font-size:.85rem;font-weight:800;color:#236B4E;text-decoration:underline;text-underline-offset:4px}
+    .impact{background:var(--navy);color:white}.impact h2{color:white}.impact p{color:#D2E5D8}.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:34px}.impact-stat{padding:25px;border:1px solid rgba(255,255,255,.16);border-radius:18px}.impact-stat strong{display:block;font-size:2.45rem;font-family:Manrope,sans-serif;color:#B8E6BE;line-height:1.3}.impact-stat span{color:#D2E5D8;font-size:.88rem}
+    .contact-panel{background:white;border:1px solid var(--line);border-radius:26px;padding:55px;display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center;box-shadow:var(--shadow)}.contact-panel p{max-width:570px}.contact-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:flex-end}.contact-actions .btn{white-space:nowrap}.muted-link{border:1px solid var(--line);color:var(--navy)}footer{border-top:1px solid var(--line);padding:30px 0;background:white}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:.84rem;color:var(--muted)}.footer-row a{text-decoration:underline;text-underline-offset:3px}
+    .notice{margin-top:15px;font-size:.8rem;color:#547A62}.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}.reveal.visible{opacity:1;transform:none}a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+    @media(max-width:900px){.hero-grid{gap:35px}.card-grid{grid-template-columns:repeat(2,1fr)}.about-grid{gap:35px}.navlinks{gap:14px}.navlinks a{font-size:.78rem}}
+    @media(max-width:700px){.wrap{padding-left:20px;padding-right:20px}.section{padding:68px 0}.nav{height:67px}.menu-toggle{display:block}.navlinks{display:none;position:absolute;top:67px;left:0;right:0;padding:20px;background:var(--cream);box-shadow:0 18px 25px rgba(16,36,58,.1);flex-direction:column;align-items:stretch;gap:0}.navlinks.open{display:flex}.navlinks a{padding:12px;font-size:.95rem}.navlinks .nav-cta{text-align:center;margin-top:10px}.hero-grid{grid-template-columns:1fr;padding-top:75px;padding-bottom:70px;gap:40px;min-height:0}.hero h1{font-size:clamp(3.2rem,13vw,5rem)}.hero-card{max-width:450px;width:100%;margin:auto}.monogram{height:120px;font-size:5rem}.quick-grid{grid-template-columns:1fr;gap:18px;padding-top:25px;padding-bottom:25px}.about-grid,.contact-panel{grid-template-columns:1fr}.card-grid,.projects{grid-template-columns:1fr}.timeline-item{grid-template-columns:1fr;gap:6px;padding:22px}.impact-grid{grid-template-columns:1fr;gap:13px}.impact-stat strong{font-size:2rem}.contact-panel{padding:30px}.contact-actions{justify-content:flex-start}.footer-row{flex-direction:column;text-align:center}.section-head{margin-bottom:28px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.btn,.card{transition:none}}
   </style>
 </head>
 <body>
-  <main class="container">
-
-    <header class="hero">
-      <h1>Hoang Duc Dung</h1>
-      <p class="tagline">Business Analyst / Marketing Analyst</p>
-      <div class="contact-links">
-        <a href="mailto:ducdung1332004@gmail.com">✉️ ducdung1332004@gmail.com</a>
-        <span>📍 Boston, MA</span>
-      </div>
-    </header>
-
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        I am currently an MSBA (Master of Science in Business Analytics) student at Babson College.
-        I'm interested in the media tech field, especially applying data analytics to track and
-        measure results more effectively.
-      </p>
-    </section>
-
-    <section id="experience">
-      <h2>Experience</h2>
-
-      <div class="entry">
-        <div class="entry-header">
-          <h3>AI-Business Research Intern</h3>
-          <span class="entry-dates">06/2026 – 07/2026</span>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="Dave Hoang home">Dave Hoang<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">☰ Menu</button>
+      <nav class="navlinks" id="navLinks" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#research">Research</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a class="nav-cta" href="#contact">Let's Connect ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Research-minded · Data-driven · Impact-oriented</div>
+          <h1>Hello, I'm<br><span class="accent">Dave Hoang.</span></h1>
+          <p>MS in Business Analytics candidate at <strong style="color:white">Babson College</strong>, exploring the intersection of consumer behavior, emerging technology, digital platforms, and strategic innovation.</p>
+          <div class="hero-buttons"><a class="btn btn-gold" href="#research">Explore My Research ↗</a><a class="btn btn-outline" href="#projects">View Selected Work ↓</a></div>
         </div>
-        <p class="entry-sub">Colorado State University · Fort Collins, CO, USA (full-ride scholarship)</p>
-        <ul class="bullets">
-          <li>Conducted a research paper on personalized sustainability recommendations for Gen Z shopping on e-commerce platforms.</li>
-        </ul>
-      </div>
-
-      <div class="entry">
-        <div class="entry-header">
-          <h3>Product Operations Analyst</h3>
-          <span class="entry-dates">12/2025 – 03/2026</span>
+        <div class="hero-card" aria-label="Dave Hoang profile card">
+          <div class="small-label">Academic & professional portfolio</div>
+          <div class="monogram" aria-hidden="true">DH.</div>
+          <h3>Curiosity meets impact.</h3>
+          <p>Marketing foundations. Analytical methods. Questions that matter.</p>
         </div>
-        <p class="entry-sub">VinSmart Future · Hanoi, Vietnam</p>
-        <ul class="bullets">
-          <li>Designed a cross-functional feature governance flow for a new multi-service platform, saving decision time by 50%.</li>
-        </ul>
-      </div>
-
-      <div class="entry">
-        <div class="entry-header">
-          <h3>Marketing Collaborator</h3>
-          <span class="entry-dates">07/2025 – 09/2025</span>
-        </div>
-        <p class="entry-sub">VinSmart Future · Hanoi, Vietnam</p>
-        <ul class="bullets">
-          <li>Scaled livestream campaigns to 3 million views in 2 months by anchoring content in large-scale events (50,000+ attendees).</li>
-          <li>Reduced outsourced marketing costs by 10% by standardizing content production with an AI-enabled system.</li>
-          <li>Promoted app download growth to over 1 million ahead of target through market research and customer data analysis.</li>
-        </ul>
-      </div>
-
-      <div class="entry">
-        <div class="entry-header">
-          <h3>Event Planner / Content Designer</h3>
-          <span class="entry-dates">01/2025 – 07/2025</span>
-        </div>
-        <p class="entry-sub">American Marketing Association · Bemidji, MN, USA</p>
-        <ul class="bullets">
-          <li>Delivered 5+ hybrid workshops for 100+ students in total, enhancing skills in creative programming and vocational training.</li>
-          <li>Secured 20+ marketing internships for students through strategic partnerships with industry professionals and content creators.</li>
-          <li>Designed the media content strategy for the Spring 2025 Employment Fair, attracting 100+ companies and 300+ students.</li>
-        </ul>
-      </div>
-
-      <div class="entry">
-        <div class="entry-header">
-          <h3>Marketing Collaborator</h3>
-          <span class="entry-dates">07/2024 – 09/2024</span>
-        </div>
-        <p class="entry-sub">VinFast · Hanoi, Vietnam</p>
-        <ul class="bullets">
-          <li>Crafted brand positioning for Middle East and Asia markets through competitive analysis of 10+ electric vehicle brands.</li>
-          <li>Produced on-site content with 15+ celebrities, delivering photos and videos for campaigns that reached 10 million total views.</li>
-          <li>Executed content promotion for 10+ showroom launches across Vietnam, India, and Dubai, increasing engagement by 30%.</li>
-        </ul>
       </div>
     </section>
-
-    <section id="education">
-      <h2>Education</h2>
-
-      <div class="entry">
-        <div class="entry-header">
-          <h3>Master's in Business Analytics</h3>
-          <span class="entry-dates">09/2026 – 06/2027</span>
-        </div>
-        <p class="entry-sub">Babson College · Babson Park, MA, USA</p>
-        <ul class="bullets">
-          <li>Received three merit-based scholarships, including the Babson Impact Award, Olin MSBA, and Babson Leadership.</li>
-        </ul>
-      </div>
-
-      <div class="entry">
-        <div class="entry-header">
-          <h3>Exchange Student</h3>
-          <span class="entry-dates">01/2025 – 05/2025</span>
-        </div>
-        <p class="entry-sub">Bemidji State University · Bemidji, MN, USA</p>
-        <ul class="bullets">
-          <li>Received a full-ride scholarship from the U.S. Bureau of Educational and Cultural Affairs (&lt;2% competitive rate).</li>
-          <li>Honors: President's List Award (4.0 GPA, top 7% of university students).</li>
-        </ul>
-      </div>
-
-      <div class="entry">
-        <div class="entry-header">
-          <h3>Bachelor of Business Administration in Marketing (BBA)</h3>
-          <span class="entry-dates">09/2022 – 06/2026 (Expected)</span>
-        </div>
-        <p class="entry-sub">VinUniversity · Hanoi, Vietnam</p>
-        <ul class="bullets">
-          <li>Honors: 3 Dean's List Awards (top 10% of students). Received a 90% merit-based scholarship for four years.</li>
-          <li>Competitively selected as 1 of 2 students from a pool of 70 for a merit-based exchange program at the University of Birmingham.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="extracurricular">
-      <h2>Extracurricular Activities</h2>
-
-      <div class="entry">
-        <div class="entry-header">
-          <h3>Head of Performance Team / Vocalist Mentor</h3>
-          <span class="entry-dates">10/2022 – Present</span>
-        </div>
-        <p class="entry-sub">"VinUni Harmony" Music Club · Hanoi, Vietnam</p>
-        <ul class="bullets">
-          <li>Coached 30+ performers in vocal technique and stage presence across 10+ artistic shows.</li>
-          <li>Raised $1,000+ for playground building and cleft palate surgeries in northern mountainous regions through two musical shows.</li>
-          <li>Designed a music curriculum teaching ukulele and guitar to 50+ children with disabilities to boost creative expression.</li>
-        </ul>
-      </div>
-
-      <div class="entry">
-        <div class="entry-header">
-          <h3>Co-founder / Head of Marketing</h3>
-          <span class="entry-dates">09/2018 – Present</span>
-        </div>
-        <p class="entry-sub">"Clay Flowers" Club (non-profit) · Quang Tri, Vietnam</p>
-        <ul class="bullets">
-          <li>Managed marketing and external partnerships with 20+ provincial schools and offices, driving 100+ monthly sales.</li>
-          <li>Organized 30+ field trips and markets for 5,000+ Vietnamese and Korean students, elevating international brand awareness.</li>
-          <li>Partnered with the "Thien Tam" foundation to raise $25,000+ for school infrastructure improvement and student scholarships.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="skills">
-      <h2>Skills &amp; Interests</h2>
-      <ul class="skills-list">
-        <li>SQL</li>
-        <li>Tableau</li>
-        <li>Microsoft Excel</li>
-        <li>Microsoft PowerPoint</li>
-        <li>Google Analytics</li>
-        <li>IBM SPSS</li>
-        <li>Canva</li>
-        <li>CapCut PC</li>
-      </ul>
-      <p>
-        <strong>Interests:</strong> Badminton player since age 4 with multiple awards;
-        education content creator (5,000+ followers); musical theatre vocalist.
-      </p>
-    </section>
-
-    <footer>
-      <p>&copy; <span id="year"></span> Hoang Duc Dung</p>
-    </footer>
+    <div class="quick-strip"><div class="wrap quick-grid">
+      <div class="quick-item"><strong>Babson College</strong><span>MS in Business Analytics · 2026–2027</span></div>
+      <div class="quick-item"><strong>VinUniversity</strong><span>BBA · Marketing concentration</span></div>
+      <div class="quick-item"><strong>Research Focus</strong><span>AI · Consumer Behavior · Digital Platforms</span></div>
+    </div></div>
+    <section class="section" id="about"><div class="wrap about-grid">
+      <div class="about-copy reveal"><div class="eyebrow">01 / About me</div><h2>Building bridges between <span class="accent">people, data, and technology.</span></h2><p>I'm Dave, a Vietnamese graduate student with a background in marketing and a growing focus on business analytics and research. My interests sit at the intersection of how people make decisions, how digital platforms shape behavior, and how organizations can use data responsibly.</p><p>My experience spans marketing, digital ecosystems, analytics projects, and community initiatives. I hope to bring these perspectives into rigorous research and meaningful real-world applications.</p><div class="tag-row"><span class="tag">Consumer Behavior</span><span class="tag">Business Analytics</span><span class="tag">Digital Strategy</span><span class="tag">AI & Media</span></div></div>
+      <aside class="quote-card reveal"><div class="quote-mark">“</div><div class="quote">I am interested in not only what technology makes possible, but also how it changes the way people think, feel, and act.</div><p style="margin:20px 0 0;font-size:.85rem">A guiding question behind my academic interests</p></aside>
+    </div></section>
+    <section class="section alt" id="research"><div class="wrap"><div class="section-head reveal"><div class="eyebrow">02 / Research interests</div><h2>Questions worth <span class="accent">exploring.</span></h2><p>My developing research agenda brings together consumer psychology, computational methods, and the changing digital media landscape.</p></div>
+      <div class="card-grid"><article class="card reveal"><div class="num">01 — CONSUMER PSYCHOLOGY</div><h3>AI, Trust & Consumer Decisions</h3><p>How do consumers evaluate AI-generated personalities, virtual influencers, and automated commercial interactions? What shapes trust, psychological distance, and purchase intentions?</p></article><article class="card reveal"><div class="num">02 — DIGITAL PLATFORMS</div><h3>Creators, Influence & Engagement</h3><p>How do platform design, creator relationships, and communication cues shape engagement and economic opportunities in digital ecosystems?</p></article><article class="card reveal"><div class="num">03 — METHODS</div><h3>Computational & Experimental Research</h3><p>Interested in combining experiments, survey research, statistical modeling, and computational analysis to investigate consumer behavior.</p></article></div>
+    </div></section>
+    <section class="section" id="education"><div class="wrap"><div class="section-head reveal"><div class="eyebrow">03 / Education</div><h2>An interdisciplinary <span class="accent">foundation.</span></h2></div><div class="timeline">
+      <article class="timeline-item reveal"><div class="date">2026 — 2027 (expected)</div><div><h3>Babson College</h3><div class="org">Master of Science in Business Analytics · Entrepreneurship track</div><p>Graduate coursework in programming for business analytics, machine learning, data visualization, and systems thinking.</p></div></article>
+      <article class="timeline-item reveal"><div class="date">Undergraduate studies</div><div><h3>VinUniversity</h3><div class="org">Bachelor of Business Administration · Marketing concentration</div><p>Foundation in marketing, quantitative analysis, business strategy, and interdisciplinary collaboration.</p></div></article>
+      <article class="timeline-item reveal"><div class="date">Spring 2025</div><div><h3>Bemidji State University</h3><div class="org">Academic exchange · United States</div><p>Cross-cultural academic and student organization experience.</p></div></article>
+    </div></div></section>
+    <section class="section alt" id="projects"><div class="wrap"><div class="section-head reveal"><div class="eyebrow">04 / Selected work</div><h2>Ideas into <span class="accent">evidence and action.</span></h2><p>A selection of academic and applied projects. These are project descriptions, not claims of peer-reviewed publication.</p></div><div class="projects">
+      <article class="project reveal"><div class="project-art"><span>AI</span><span>Research project</span></div><div class="project-body"><h3>AI Livestreaming & Gen Z Consumer Behavior</h3><p>Exploring ethical concerns, psychological distance, and purchase intention toward AI livestreaming in Vietnam's beauty sector through a stimulus–organism–response framework.</p><div class="tag-row"><span class="tag">Consumer Research</span><span class="tag">PLS-SEM</span></div></div></article>
+      <article class="project reveal"><div class="project-art"><span>01</span><span>Analytics project</span></div><div class="project-body"><h3>Student Budget Planner</h3><p>A Python-based learning project that categorizes spending, evaluates budget utilization, and compares remaining funds against a savings goal.</p><a href="https://github.com/hoangducdungbabson/oim6301/blob/main/projects/mp1/student-budget-planner.py" target="_blank" rel="noopener noreferrer">View project on GitHub ↗</a><div class="tag-row"><span class="tag">Python</span><span class="tag">Business Analytics</span></div></div></article>
+      <article class="project reveal"><div class="project-art"><span>DV</span><span>Data storytelling</span></div><div class="project-body"><h3>Bike Share Demand Visualization</h3><p>Exploratory visual analysis of hourly bike usage patterns across rider types, seasons, and weather conditions to identify operational insights.</p><div class="tag-row"><span class="tag">Tableau</span><span class="tag">Visualization</span></div></div></article>
+      <article class="project reveal"><div class="project-art"><span>ST</span><span>Systems thinking</span></div><div class="project-body"><h3>Systems Thinking & Dynamic Modeling</h3><p>Applying feedback loops, stocks and flows, and scenario-based reasoning to understand complex business and service systems.</p><div class="tag-row"><span class="tag">Vensim</span><span class="tag">Simulation</span></div></div></article>
+    </div></div></section>
+    <section class="section" id="experience"><div class="wrap"><div class="section-head reveal"><div class="eyebrow">05 / Experience</div><h2>Learning by <span class="accent">doing.</span></h2><p>Selected experience across marketing, operations, and community engagement.</p></div><div class="timeline">
+      <article class="timeline-item reveal"><div class="date">Marketing & digital ecosystems</div><div><h3>Vin Smart Future / VinFast</h3><div class="org">Marketing and market intelligence experience</div><p>Contributed to competitor research, performance reporting, creator collaborations, and market-facing initiatives across digital and automotive ecosystems.</p></div></article>
+      <article class="timeline-item reveal"><div class="date">Product & operations</div><div><h3>VinUniversity Capstone</h3><div class="org">Product operations analysis</div><p>Worked on process clarity, stakeholder responsibilities, and prioritization approaches for a digital platform context.</p></div></article>
+      <article class="timeline-item reveal"><div class="date">Leadership & service</div><div><h3>Clay Flowers Club / VinUni Harmony</h3><div class="org">Community initiatives and performing arts</div><p>Supported education-focused community programs and creative initiatives, including opportunities for young people with disabilities.</p></div></article>
+    </div></div></section>
+    <section class="section impact"><div class="wrap"><div class="eyebrow">06 / Beyond the classroom</div><h2>Research matters most when it <span class="accent">serves people.</span></h2><p>Community engagement and creative education remain important parts of my long-term aspirations.</p><div class="impact-grid"><div class="impact-stat"><strong>People</strong><span>Designing with human needs and experiences in mind</span></div><div class="impact-stat"><strong>Evidence</strong><span>Using analytical thinking to question assumptions</span></div><div class="impact-stat"><strong>Impact</strong><span>Connecting research and strategy with positive change</span></div></div></div></section>
+    <section class="section" id="contact"><div class="wrap"><div class="contact-panel reveal"><div><div class="eyebrow">07 / Get in touch</div><h2>Let's start a <span class="accent">conversation.</span></h2><p>I'm interested in connecting with researchers, students, and professionals working at the intersection of marketing, analytics, consumer behavior, and emerging technology.</p><p class="notice">To add a public email address, LinkedIn profile, or CV download, update the placeholders noted in the HTML source.</p></div><div class="contact-actions"><a class="btn btn-dark" href="https://github.com/hoangducdungbabson" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a class="btn muted-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" title="Replace this URL with your LinkedIn profile">LinkedIn ↗</a><a class="btn muted-link" href="mailto:YOUR_EMAIL@example.com" title="Replace with your public email address">Email Me ↗</a><a class="btn muted-link" href="cv.pdf" download title="Upload cv.pdf to the repository first">Download CV ↓</a></div></div></div></section>
   </main>
-
+  <footer><div class="wrap footer-row"><span>© <span id="year">2026</span> Dave Hoang. Built with curiosity.</span><span>Boston, Massachusetts · <a href="#home">Back to top ↑</a></span></div></footer>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    const menuButton=document.getElementById('menuToggle'),navLinks=document.getElementById('navLinks');
+    menuButton.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));});
+    navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuButton.setAttribute('aria-expanded','false');}));
+    if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}})},{threshold:.08});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));}else{document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));}
   </script>
 </body>
 </html>
